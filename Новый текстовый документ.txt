@@ -1,0 +1,25 @@
+установка ВМ
+python -m venv venv
+
+запуск ВМ
+venv\scripts\activate
+
+установка джанго
+pip install django
+
+создание пустого проекта джанго
+django-admin startproject project
+
+Переходим в папку project в нашем терминале или cmd (если вы на Windows):
+cd project
+
+запускаем сервер
+python manage.py runserver
+
+применяем миграции
+python manage.py migrate
+
+создание первого администратора
+python manage.py createsuperuser
+
+admin admin
